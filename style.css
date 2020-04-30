@@ -1,0 +1,285 @@
+/************************************ GIVEN ************************************/
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/************************************ MINE ************************************/
+
+/*////////////////////////////////////////////////////////////// M O B I L E //////*/
+
+@media only screen and (max-width: 375px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 2px;
+  }
+
+  #entire-panel {
+    display: grid;
+    grid-template-rows: 265px 228px 228px;
+    grid-template-columns: 310px;
+    box-shadow: rgba(148, 148, 148, 0.336) 0px 0px 20px;
+    border-radius: 5px;
+    font-family: "Karla", sans-serif;
+    letter-spacing: -0.3px;
+  }
+
+  /*------------- top panel ----------------*/
+
+  #top-panel {
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 25px;
+  }
+
+  #top-panel h1 {
+    margin-top: 4px;
+    color: hsl(179, 62%, 45%);
+    font-size: 20px;
+  }
+
+  #top-panel h2 {
+    margin: 24px 0px 0px 0px;
+    font-size: 15px;
+    color: hsl(71, 77%, 53%);
+    line-height: 20px;
+  }
+
+  #top-panel p {
+    margin: 18px 0px 0px 0px;
+    font-size: 14px;
+    color: hsl(201, 13%, 78%);
+    line-height: 25px;
+  }
+
+  /*------------- bottom panel -------------*/
+
+  #bottom-panel {
+    display: grid;
+    grid-template-columns: 310px;
+    grid-template-rows: 228px 228px;
+  }
+
+  .block {
+    color: white;
+    /* height: 180px; */
+    display: block;
+  }
+
+  .block h3 {
+    color: rgba(255, 255, 255, 0.733);
+    margin: 0px;
+    font-size: 18px;
+  }
+
+  .block p {
+    color: rgba(255, 255, 255, 0.644);
+    margin: 0px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+  }
+
+  #price-div {
+    display: inline-flex;
+    align-items: center;
+    margin: 18px 0px 8px 0px;
+  }
+
+  #price-div #price {
+    font-size: 32px;
+    margin-right: 15px;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.904);
+  }
+
+  #price-div #permonth {
+    font-size: 16px;
+    color: hsla(203, 44%, 93%, 0.445);
+  }
+
+  #leftblock {
+    background-color: hsl(179, 62%, 43%);
+    padding: 25px;
+  }
+
+  #rightblock {
+    background-color: hsl(179, 68%, 44%);
+    border-radius: 0px 0px 5px 5px;
+    padding: 25px;
+  }
+
+  #why-list {
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+
+  button {
+    background-color: hsl(71, 73%, 54%);
+    color: rgba(255, 255, 255, 0.795);
+    width: 100%;
+    padding: 14px 0px 15px 0px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.103) 0px 5px 10px 2px;
+  }
+
+  /*------------- footer -------------------*/
+  footer p {
+    height: 20px;
+    margin: 20px;
+  }
+}
+
+/*//////////////////////////////////////////////////////////// D E S K T O P //////*/
+
+@media only screen and (min-width: 376px) {
+  html {
+    height: 100%;
+  }
+
+  body {
+    background-color: hsl(204, 43%, 93%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+  }
+
+  #entire-panel {
+    display: grid;
+    grid-template-rows: 215px 260px;
+    grid-template-columns: 635px;
+    box-shadow: rgba(148, 148, 148, 0.336) 0px 0px 20px;
+    border-radius: 5px;
+    margin-top: 45px; /* Offset the footer */
+    font-family: "Karla", sans-serif;
+    letter-spacing: -0.3px;
+  }
+
+  /*------------- top panel ----------------*/
+
+  #top-panel {
+    background-color: white;
+    border-radius: 5px 5px 0px 0px;
+    padding: 40px;
+  }
+
+  #top-panel h1 {
+    margin: 0px;
+    color: hsl(179, 62%, 43%);
+    font-size: 24px;
+  }
+
+  #top-panel h2 {
+    margin: 24px 0px 0px 0px;
+    font-size: 18px;
+    color: hsl(71, 73%, 54%);
+  }
+
+  #top-panel p {
+    margin: 10px 0px 0px 0px;
+    font-size: 16px;
+    color: hsl(201, 13%, 78%);
+    line-height: 25px;
+  }
+
+  /*------------- bottom panel -------------*/
+
+  #bottom-panel {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 260px;
+  }
+
+  .block {
+    color: white;
+    height: 180px;
+    width: 237.5px;
+  }
+
+  .block h3 {
+    color: rgba(255, 255, 255, 0.733);
+    margin: 0px;
+    font-size: 18px;
+  }
+
+  .block p {
+    color: rgba(255, 255, 255, 0.644);
+    margin: 0px;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+  }
+
+  #price-div {
+    display: inline-flex;
+    align-items: center;
+    margin: 18px 0px 8px 0px;
+  }
+
+  #price-div #price {
+    font-size: 32px;
+    margin-right: 15px;
+    letter-spacing: 0.4px;
+    color: rgba(255, 255, 255, 0.904);
+  }
+
+  #price-div #permonth {
+    font-size: 16px;
+    color: hsla(203, 44%, 93%, 0.445);
+  }
+
+  #leftblock {
+    background-color: hsl(179, 62%, 43%);
+    border-radius: 0px 0px 0px 5px;
+    padding: 40px;
+  }
+
+  #rightblock {
+    background-color: hsl(179, 68%, 44%);
+    border-radius: 0px 0px 5px 0px;
+    padding: 40px;
+  }
+
+  #why-list {
+    font-size: 13px;
+    margin-top: 20px;
+    line-height: 20px;
+  }
+
+  button {
+    background-color: hsl(71, 73%, 54%);
+    color: rgba(255, 255, 255, 0.795);
+    width: 100%;
+    padding: 14px 0px 15px 0px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+
+  /*------------- footer -------------------*/
+  footer p {
+    height: 20px;
+    margin: 20px;
+  }
+}
